@@ -1,0 +1,104 @@
+.profile {
+    flex: 0.8;
+    padding: 30px;
+}
+
+.profile .profile-card {
+    background-color: #191C1F;
+    padding: 15px;
+}
+
+.profile .upper-img img {
+    max-height: 250px;
+    object-fit: cover;
+    background-position: center center;
+}
+
+.profile .profile-overview .profile-avatar {
+    display: flex;
+}
+
+.profile .profile-overview .profile-avatar img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 15px;
+    margin-top: -25px;
+    margin-left: 15px;
+}
+
+.profile .profile-overview .profile-avatar h4 {
+    font-size: 18px;
+    margin-top: 8px;
+}
+
+.profile-informations {
+    margin-top: 30px;
+}
+
+.profile-informations .input-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.profile-informations .input-container .input-item{
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+    flex-basis: 33.333%;
+    margin-bottom: 10px;
+}
+
+.profile-informations .input-container .input-item label {
+    padding: 0 2px;
+    font-weight: bold;
+}
+
+.profile-informations .input-container .input-item input {
+    border: 1px solid rgb(85, 85, 85);
+    outline: none;
+    height: 30px;
+    background-color: #222B31;
+    color: #fff;
+    font-weight: 500;
+    padding: 0 10px;
+    margin-top: 5px;
+}
+
+.profile-informations .input-container .input-item input::placeholder {
+    color: rgba(255, 255, 255, 0.342);
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 1.2px;
+}
+
+.profile-informations .button-area {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.profile-informations .button-area button{
+    background: #FF424F;
+    border: none;
+    outline: none;
+    padding: 8px 30px;
+    color: #fff;
+    font-weight: bold;
+    transition: all .3s linear;
+    cursor: pointer;
+}
+
+.profile-informations .button-area button:hover {
+    background: #e90e1c;
+}
+
+@media (max-width: 767.98px) {
+    .profile {
+        flex: 1;
+    }
+
+    .profile-informations .input-container .input-item {
+        flex-basis: 100%;
+    }
+}

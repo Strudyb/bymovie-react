@@ -1,0 +1,41 @@
+.sidebar {
+    flex: .2;
+    background: #191C1F;
+    padding-top: 45px;
+}
+
+.sidebar>ul> li a {
+    color: #D8E7F1;
+    display: block;
+    padding-left: 35px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    transition: all .3s linear;
+    font-weight: 500;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.sidebar>ul> li a:hover {
+    background-color: #222B31;
+    color: #FF424F;
+}
+
+.sidebar>ul> .active {
+    background-color: #222B31;
+    color: #FF424F;
+}
+
+@media (max-width: 576px) {
+    .sidebar {
+        flex: 1 100%;
+        background: #191C1F;
+        padding-top: 45px;
+    }
+
+    .sidebar>ul> li a {
+        padding-left: 0;
+    }
+}

@@ -1,0 +1,93 @@
+.menubar {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-between;
+    background-color: #F83745;
+    align-items: center;
+}
+
+.menubar .menubar-left {
+    background-color: #FF424F;
+}
+
+.menubar .menubar-left .logo {
+    display: block;
+    padding: 24px 60px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.menubar .menubar-right {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    padding: 0 60px;
+}
+
+.menubar .menubar-right .menubar-ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    list-style-type: none;
+}
+
+.menubar .menubar-right .menubar-ul input[type="search"] {
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 16px;
+    color: #FF9EA3;
+    transition: all .3s linear;
+}
+
+.menubar .menubar-right .menubar-ul input[type="search"]::placeholder {
+    color: #FF9EA3;
+    letter-spacing: .5px;
+    text-align: center;
+}
+
+.menubar .menubar-right .menubar-ul .menubar-user {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 15px;
+}
+
+.menubar .menubar-right .menubar-ul .menubar-user a {
+    color: #fff;
+    margin-bottom: 5px;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: .6px;
+}
+
+.menubar .menubar-right .menubar-ul .menubar-user img {
+    border-radius: 50%;
+}
+
+@media all and (max-width: 576px) {
+    .menubar {
+        flex-wrap: wrap;
+    }
+
+    .menubar .menubar-left {
+        width: 100%;
+        text-align: center;
+    }
+
+    .menubar .menubar-right .menubar-ul {
+        flex-direction: column;
+    }
+
+    .menubar .menubar-right .menubar-ul li:first-child {
+        order: 1;
+        margin-top: 15px;
+    }
+
+    .menubar .menubar-right {
+        padding: 0 20px;
+    }
+}
